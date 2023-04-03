@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace top_shop_models.Models
+namespace top_shop_models
 {
     public class Provider
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string TIN { get; set; }
+        [Required][StringLength(30)] public string Name { get; set; }
+        [Required][StringLength(200)] public string Description { get; set; }
+        [Required][StringLength(100)] public string TIN { get; set; }
         public virtual ICollection<Item> Items { get; set; }
 
     }

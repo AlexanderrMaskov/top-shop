@@ -3,13 +3,13 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="(local)\SQLEXPRESS1:user">
-          <Created>2023-03-31T19:40:44.5225915+03:00</Created>
+        <ConnectionNode Name="(local)\SQLEXPRESS:user">
+          <Created>2023-03-31T19:40:40.127979+03:00</Created>
           <Type>SQL</Type>
-          <Server>(local)\SQLEXPRESS1</Server>
+          <Server>(local)\SQLEXPRESS</Server>
           <UserName>user</UserName>
           <Authentication>SQL</Authentication>
-          <InitialDB>master</InitialDB>
+          <InitialDB />
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>

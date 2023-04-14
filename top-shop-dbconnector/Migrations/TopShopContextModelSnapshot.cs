@@ -67,8 +67,8 @@ namespace top_shop_dbconnector.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<Guid>("ItemTypeId")
                         .HasColumnType("uniqueidentifier");
@@ -103,8 +103,8 @@ namespace top_shop_dbconnector.Migrations
                     b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<string>("Comment")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Discount")
+                        .HasColumnType("float");
 
                     b.Property<Guid>("ItemId")
                         .HasColumnType("uniqueidentifier");
@@ -272,13 +272,13 @@ namespace top_shop_dbconnector.Migrations
             modelBuilder.Entity("top_shop_models.ItemWarehouse", b =>
                 {
                     b.HasOne("top_shop_models.Item", "Item")
-                        .WithMany("ItemWarehouse")
+                        .WithMany("ItemWarehouses")
                         .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("top_shop_models.Warehouse", "Warehouse")
-                        .WithMany()
+                        .WithMany("ItemWarehouses")
                         .HasForeignKey("WarehouseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -308,7 +308,7 @@ namespace top_shop_dbconnector.Migrations
                 {
                     b.Navigation("ItemOrders");
 
-                    b.Navigation("ItemWarehouse");
+                    b.Navigation("ItemWarehouses");
                 });
 
             modelBuilder.Entity("top_shop_models.Order", b =>
@@ -319,6 +319,11 @@ namespace top_shop_dbconnector.Migrations
             modelBuilder.Entity("top_shop_models.Provider", b =>
                 {
                     b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("top_shop_models.Warehouse", b =>
+                {
+                    b.Navigation("ItemWarehouses");
                 });
 #pragma warning restore 612, 618
         }

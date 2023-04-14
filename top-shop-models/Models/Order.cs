@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace top_shop_models
 {
@@ -12,9 +6,8 @@ namespace top_shop_models
     {
         public Guid Id { get; set; }
         public double TotalPrice { get; set; }
+
         [Required] public virtual Client Client { get; set; }
-
         public virtual ICollection<ItemOrder> ItemOrders { get; set; }
-
     }
 }

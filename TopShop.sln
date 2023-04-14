@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "top-shop-models", "top-shop-models\top-shop-models.csproj", "{4E11417E-ADA4-40B4-90BD-385C16F69B65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "top_shop_dbconnector", "top_shop_dbconnector\top_shop_dbconnector.csproj", "{A2D0C295-A1E0-4009-9299-5AB37C1C3086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "top_shop_dbconnector", "top_shop_dbconnector\top_shop_dbconnector.csproj", "{A2D0C295-A1E0-4009-9299-5AB37C1C3086}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A1FC447E-ACFE-47F0-B734-D9250B9C8255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "top-shop-client", "top-shop-client\top-shop-client.csproj", "{6B1DC18B-A344-4A21-87E9-2E66C513E57F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,17 @@ Global
 		{A2D0C295-A1E0-4009-9299-5AB37C1C3086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D0C295-A1E0-4009-9299-5AB37C1C3086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2D0C295-A1E0-4009-9299-5AB37C1C3086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1DC18B-A344-4A21-87E9-2E66C513E57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1DC18B-A344-4A21-87E9-2E66C513E57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1DC18B-A344-4A21-87E9-2E66C513E57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1DC18B-A344-4A21-87E9-2E66C513E57F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E11417E-ADA4-40B4-90BD-385C16F69B65} = {A1FC447E-ACFE-47F0-B734-D9250B9C8255}
+		{A2D0C295-A1E0-4009-9299-5AB37C1C3086} = {A1FC447E-ACFE-47F0-B734-D9250B9C8255}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB8B988F-85F5-4C01-B2AC-3FF0350ACA59}

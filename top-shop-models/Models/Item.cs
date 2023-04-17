@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace top_shop_models
         [Required][StringLength(30)] public string Name { get; set; }
         [Required][StringLength(1000)] public string Description { get; set; }
         public double Price { get; set; }
-
+        [NotMapped] public string AvatarLink { get; set; }
 
         [Required] public virtual ItemType ItemType { get; set; }
         [Required] public virtual Provider Provider { get; set; }

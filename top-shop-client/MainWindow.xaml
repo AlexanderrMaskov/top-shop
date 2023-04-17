@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
 
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Center">
-            <WrapPanel Grid.Row="1">
+            <WrapPanel Grid.Row="1" x:Name="ItemList">
             <WrapPanel.Resources>
                 <Style TargetType="my:ItemCard">
                     <Setter Property="Margin" Value="5"/>

@@ -12,6 +12,9 @@
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
+        <Button Content="Sign in" MinWidth="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Click="SignIn_Click"/>
+        <Button Content="Sign up" MinWidth="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0" Click="SignUp_Click"/>
+        
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Center">
             <WrapPanel Grid.Row="1" x:Name="ItemList">
             <WrapPanel.Resources>

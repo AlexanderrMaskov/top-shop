@@ -49,5 +49,15 @@ namespace top_shop_client
         {
             
         }
+
+        private void SignIn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

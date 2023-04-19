@@ -1,0 +1,20 @@
+﻿<Window x:Class="top_shop_client.UserControls.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:top_shop_client.UserControls"
+        mc:Ignorable="d"
+        Title="Registration" Height="220" Width="300" FontFamily="Rage italic" FontSize="14">
+    <Grid Background="WhiteSmoke">
+        <StackPanel Margin="10">
+            <Label Content="Login:"/>
+            <TextBox x:Name="Login"/>
+            <Label Content="Password:"/>
+            <PasswordBox x:Name="Password" PasswordChar="*"/>
+            <Label Content="Repeat password:"/>
+            <PasswordBox x:Name="RepeatPassword" PasswordChar="*"/>
+            <Button Content="Registration" Margin="0,10" Width="150" Click="Registration_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

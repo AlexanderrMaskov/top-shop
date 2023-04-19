@@ -425,3 +425,4 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,windows
 /top_shop_dbconnector/Settings.json
+/top-shop-dbconnector/settings.json

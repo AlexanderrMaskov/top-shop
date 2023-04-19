@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\top-shop-dbconnector\top_shop_dbconnector.csproj" />
     <ProjectReference Include="..\top-shop-models\top-shop-models.csproj" />
-    <ProjectReference Include="..\top_shop_dbconnector\top_shop_dbconnector.csproj" />
   </ItemGroup>
 
 </Project>
